@@ -1,4 +1,4 @@
-# {{PROBLEM}} Takeaway Application
+# Takeaway Application
 
 ### This program allows the user to order food from a menu and receive confirmation of their order via text. The program utilises the Twilio API as a Ruby gem to allow the user to receive text confirmation.
 
@@ -29,7 +29,7 @@ gem install bundler
 gem install twilio-ruby
 bundle install
 
-# you will also need to create a Twilio account
+# you will also need to create a Twilio account and input your info into TwilioAPI
 
 ```
 
