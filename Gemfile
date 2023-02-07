@@ -6,3 +6,4 @@ source "https://rubygems.org"
 
 gem 'rspec'
 gem 'twilio-ruby'
+gem 'rubocop', '~> 0.89.0'
