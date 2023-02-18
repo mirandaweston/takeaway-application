@@ -48,22 +48,12 @@ require ./lib/order.rb
 
 - Ruby
 - RSpec
-- Ruby Gems
-<<<<<<< HEAD
+- Ruby Gems (including Timecop to freeze time within test suite)
 - PG Gem to implement the PostgreSQL database
-
-## 4. Test coverage: 100%
-
-=======
 - Twilio API
-- Timecop Gem to freeze time within a test suite
 
 ## 4. Test coverage: 100%
 
-
-<img width="675" alt="Screenshot 2023-02-07 at 13 27 54" src="https://user-images.githubusercontent.com/117643324/217257896-38f72b7d-b404-482a-9f97-361846b320b4.png">
-
->>>>>>> 97ab853e083be5de39f3d4fbb2863d6018878857
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
