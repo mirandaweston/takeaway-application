@@ -1,4 +1,6 @@
 require 'order'
+require 'twilio_api'
+require 'twilio-ruby'
 
 RSpec.describe Order do
   let(:menu) { instance_double('Menu', menu: { 'Pizza' => 5, 'Pasta' => 7, 'Lasagne' => 8 }) }
@@ -28,19 +30,18 @@ RSpec.describe Order do
   end
 
   describe '#show_receipt' do
-      before do
-        allow(menu).to receive(:display_menu).and_return(nil)
-        allow(subject).to receive(:gets).and_return("Pizza", "finish")
-        subject.select_dishes
-      end
+    before do
+      allow(menu).to receive(:display_menu).and_return(nil)
+      allow(subject).to receive(:gets).and_return("Pizza", "finish")
+      subject.select_dishes
+    end
 
     it "provides a receipt and sends an SMS" do
       sms = instance_double('TwilioAPI')
       allow(TwilioAPI).to receive(:new).and_return(sms)
       expect(sms).to receive(:send)
       
-      expect {subject.show_receipt}.to output("Receipt\n-------\nPizza = £5\nTotal: £5\n").to_stdout
+      expect { subject.show_receipt }.to output("Receipt\n-------\nPizza = £5\nTotal: £5\n").to_stdout
     end
   end
 end
-
