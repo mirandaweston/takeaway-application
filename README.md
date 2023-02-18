@@ -54,6 +54,7 @@ require ./lib/order.rb
 
 ## 4. Test coverage: 100%
 
+<img width="675" alt="217257896-38f72b7d-b404-482a-9f97-361846b320b4" src="https://user-images.githubusercontent.com/117643324/219884557-e4b8cdb5-345b-41a6-9e63-4fdfb589c1a6.png">
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
