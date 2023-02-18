@@ -4,6 +4,7 @@
 
 ## 1. User stories
 
+```
 As a customer
 So that I can check if I want to order something
 I would like to see a list of dishes with prices.
@@ -19,6 +20,7 @@ I would like to see an itemised receipt with a grand total.
 As a customer
 So that I am reassured that my order will be delivered on time
 I would like to receive a text such as "Thank you! Your order was placed and will be delivered before 18:52" after I have ordered.
+```
 
 ## 2. Installation
 
@@ -47,7 +49,10 @@ require ./lib/order.rb
 - Ruby
 - RSpec
 - Ruby Gems
-- Twilio API
+- PG Gem to implement the PostgreSQL database
+
+## 4. Test coverage: 100%
+
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
